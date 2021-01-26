@@ -1,3 +1,7 @@
+.cell {
+	position: relative;
+}
+
 .black {
 	background-color: #70281f;
 }
@@ -204,4 +208,23 @@
 }
 .A8 {
 	grid-area: A8;
+}
+
+.Label {
+	color: white;
+	font-size: 1.6rem;
+}
+
+.LabelVertical {
+	position: absolute;
+	top: 50%;
+	left: -2rem;
+	transform: translateY(-50%);
+}
+
+.LabelHorizontal {
+	position: absolute;
+	left: 50%;
+	bottom: -2rem;
+	transform: translateX(-50%);
 }
