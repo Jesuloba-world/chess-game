@@ -1,0 +1,207 @@
+.black {
+	background-color: #70281f;
+}
+
+.white {
+	background-color: #e3bc78;
+}
+
+.H1 {
+	grid-area: H1;
+}
+.H2 {
+	grid-area: H2;
+}
+.H3 {
+	grid-area: H3;
+}
+.H4 {
+	grid-area: H4;
+}
+.H5 {
+	grid-area: H5;
+}
+.H6 {
+	grid-area: H6;
+}
+.H7 {
+	grid-area: H7;
+}
+.H8 {
+	grid-area: H8;
+}
+
+.G1 {
+	grid-area: G1;
+}
+.G2 {
+	grid-area: G2;
+}
+.G3 {
+	grid-area: G3;
+}
+.G4 {
+	grid-area: G4;
+}
+.G5 {
+	grid-area: G5;
+}
+.G6 {
+	grid-area: G6;
+}
+.G7 {
+	grid-area: G7;
+}
+.G8 {
+	grid-area: G8;
+}
+
+.F1 {
+	grid-area: F1;
+}
+.F2 {
+	grid-area: F2;
+}
+.F3 {
+	grid-area: F3;
+}
+.F4 {
+	grid-area: F4;
+}
+.F5 {
+	grid-area: F5;
+}
+.F6 {
+	grid-area: F6;
+}
+.F7 {
+	grid-area: F7;
+}
+.F8 {
+	grid-area: F8;
+}
+
+.E1 {
+	grid-area: E1;
+}
+.E2 {
+	grid-area: E2;
+}
+.E3 {
+	grid-area: E3;
+}
+.E4 {
+	grid-area: E4;
+}
+.E5 {
+	grid-area: E5;
+}
+.E6 {
+	grid-area: E6;
+}
+.E7 {
+	grid-area: E7;
+}
+.E8 {
+	grid-area: E8;
+}
+
+.D1 {
+	grid-area: D1;
+}
+.D2 {
+	grid-area: D2;
+}
+.D3 {
+	grid-area: D3;
+}
+.D4 {
+	grid-area: D4;
+}
+.D5 {
+	grid-area: D5;
+}
+.D6 {
+	grid-area: D6;
+}
+.D7 {
+	grid-area: D7;
+}
+.D8 {
+	grid-area: D8;
+}
+
+.C1 {
+	grid-area: C1;
+}
+.C2 {
+	grid-area: C2;
+}
+.C3 {
+	grid-area: C3;
+}
+.C4 {
+	grid-area: C4;
+}
+.C5 {
+	grid-area: C5;
+}
+.C6 {
+	grid-area: C6;
+}
+.C7 {
+	grid-area: C7;
+}
+.C8 {
+	grid-area: C8;
+}
+
+.B1 {
+	grid-area: B1;
+}
+.B2 {
+	grid-area: B2;
+}
+.B3 {
+	grid-area: B3;
+}
+.B4 {
+	grid-area: B4;
+}
+.B5 {
+	grid-area: B5;
+}
+.B6 {
+	grid-area: B6;
+}
+.B7 {
+	grid-area: B7;
+}
+.B8 {
+	grid-area: B8;
+}
+
+.A1 {
+	grid-area: A1;
+}
+.A2 {
+	grid-area: A2;
+}
+.A3 {
+	grid-area: A3;
+}
+.A4 {
+	grid-area: A4;
+}
+.A5 {
+	grid-area: A5;
+}
+.A6 {
+	grid-area: A6;
+}
+.A7 {
+	grid-area: A7;
+}
+.A8 {
+	grid-area: A8;
+}

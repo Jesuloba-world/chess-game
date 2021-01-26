@@ -1,12 +1,11 @@
 import Background from "./layout/Background/Background";
+import Board from "./container/Board/Board";
 
 function App() {
 	return (
-		<div className="App">
-			<Background>
-				<h1>Hello world</h1>
-			</Background>
-		</div>
+		<Background>
+			<Board />
+		</Background>
 	);
 }
 
