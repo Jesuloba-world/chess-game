@@ -78,6 +78,7 @@ const Boardcells = (props) => {
 		<Fragment>
 			{cells.map((cell) => (
 				<BoardCell
+					key={cell.position}
 					color={cell.color}
 					position={cell.position}
 					vertical={cell.labelVertical}
