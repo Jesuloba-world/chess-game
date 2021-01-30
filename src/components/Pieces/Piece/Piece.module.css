@@ -7,6 +7,17 @@
 	z-index: 2;
 }
 
+.active {
+	background: rgb(255, 255, 255);
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 1) 6%,
+		rgba(0, 212, 255, 1) 80%
+	);
+}
+
+/*rgba(9, 9, 121, 1) 100%*/
+
 .H1 {
 	grid-area: H1;
 }
