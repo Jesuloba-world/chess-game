@@ -10,60 +10,24 @@ import queen_black from "../../assets/pieces/q_b.png";
 import queen_white from "../../assets/pieces/q_w.png";
 import rook_black from "../../assets/pieces/r_b.png";
 import rook_white from "../../assets/pieces/r_w.png";
-import classes from "./PiecesImg.module.css";
+import Piecara from "./Piecara/Piecara";
 
 const pieceImg = (props) => {
 	switch (props.color) {
 		case "white":
 			switch (props.type) {
 				case "pawn":
-					return (
-						<img
-							className={classes.piece}
-							src={pawn_white}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={pawn_white} alt={props.name} />;
 				case "rook":
-					return (
-						<img
-							className={classes.piece}
-							src={rook_white}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={rook_white} alt={props.name} />;
 				case "knight":
-					return (
-						<img
-							className={classes.piece}
-							src={knight_white}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={knight_white} alt={props.name} />;
 				case "bishop":
-					return (
-						<img
-							className={classes.piece}
-							src={bishop_white}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={bishop_white} alt={props.name} />;
 				case "king":
-					return (
-						<img
-							className={classes.piece}
-							src={king_white}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={king_white} alt={props.name} />;
 				case "queen":
-					return (
-						<img
-							className={classes.piece}
-							src={queen_white}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={queen_white} alt={props.name} />;
 				default:
 					break;
 			}
@@ -71,53 +35,17 @@ const pieceImg = (props) => {
 		case "black":
 			switch (props.type) {
 				case "pawn":
-					return (
-						<img
-							className={classes.piece}
-							src={pawn_black}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={pawn_black} alt={props.name} />;
 				case "rook":
-					return (
-						<img
-							className={classes.piece}
-							src={rook_black}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={rook_black} alt={props.name} />;
 				case "knight":
-					return (
-						<img
-							className={classes.piece}
-							src={knight_black}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={knight_black} alt={props.name} />;
 				case "bishop":
-					return (
-						<img
-							className={classes.piece}
-							src={bishop_black}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={bishop_black} alt={props.name} />;
 				case "king":
-					return (
-						<img
-							className={classes.piece}
-							src={king_black}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={king_black} alt={props.name} />;
 				case "queen":
-					return (
-						<img
-							className={classes.piece}
-							src={queen_black}
-							alt={props.name}
-						/>
-					);
+					return <Piecara src={queen_black} alt={props.name} />;
 				default:
 					break;
 			}

@@ -13,7 +13,7 @@
 	display: grid;
 	outline: 1px solid #000;
 	grid-template-columns: repeat(8, 1fr);
-	grid-template-rows: repeat(8, 1fr);
+	grid-template-rows: repeat(8, calc(100% / 8));
 	grid-template-areas:
 		"H1 H2 H3 H4 H5 H6 H7 H8"
 		"G1 G2 G3 G4 G5 G6 G7 G8"
