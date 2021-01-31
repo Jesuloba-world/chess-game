@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { pieces } from "../../objects/Cells";
+import { pieces } from "../../functions/Cells";
 import Piece from "./Piece/Piece";
 
 const Pieces = (props) => {

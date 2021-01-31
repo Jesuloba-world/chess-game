@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import BoardCell from "./BoardCell/BoardCell";
-import { cells } from "../../objects/Cells";
+import { cells } from "../../functions/Cells";
 
 const Boardcells = (props) => {
 	return (

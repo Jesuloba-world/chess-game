@@ -16,7 +16,7 @@ const reducer = (state = initialState, action) => {
 			return {
 				...state,
 				activePiece: null,
-				validCells: null,
+				validCells: [],
 			};
 		default:
 			return state;

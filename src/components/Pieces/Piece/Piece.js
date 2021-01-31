@@ -12,6 +12,7 @@ const Piece = (props) => {
 	const dispatch = useDispatch();
 
 	const pieceClass = [classes[position], classes.pieceContainer];
+
 	if (isActive) {
 		pieceClass.push(classes.active);
 	}
