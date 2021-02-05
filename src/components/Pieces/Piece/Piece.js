@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import PieceImg from "../../PiecesImg/PiecesImg";
 import classes from "./Piece.module.css";
@@ -6,11 +5,7 @@ import * as actions from "../../../store/action/index";
 import { rules } from "../../../functions/Rules";
 
 const Piece = (props) => {
-	const [position, setPosition] = useState(props.initPos);
-	const [isMoved, setIsMoved] = useState(false);
-
 	const isActive = useSelector((state) => props.name === state.activePiece);
-	const toMoveTo = useSelector((state) => state.pieceMoveTo);
 
 	const dispatch = useDispatch();
 
@@ -18,17 +13,23 @@ const Piece = (props) => {
 		dispatch(actions.pickPiece(props.name));
 		dispatch(
 			actions.setValidMoves(
-				rules(props.type, position, props.color === "black", isMoved)
+				rules(
+					props.type,
+					props.position,
+					props.color === "black",
+					props.isMoved
+				)
 			)
 		);
+		if (isActive) {
+			dispatch(actions.clearActive());
+		}
 	};
 
-	const pieceClass = [classes[position], classes.pieceContainer];
+	const pieceClass = [classes[props.position], classes.pieceContainer];
 
 	if (isActive) {
 		pieceClass.push(classes.active);
-
-		console.log(toMoveTo);
 	}
 
 	return (

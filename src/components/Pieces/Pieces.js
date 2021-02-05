@@ -13,7 +13,8 @@ const Pieces = (props) => {
 					color={piece.color}
 					type={piece.type}
 					name={piece.name}
-					initPos={piece.initialPosition}
+					position={piece.position}
+					isMoved={piece.isMoved}
 				/>
 			))}
 		</Fragment>

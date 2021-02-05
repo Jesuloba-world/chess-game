@@ -22,10 +22,10 @@ const BoardCell = (props) => {
 	}
 
 	const onClickHandler = () => {
-		dispatch(clearActive());
 		if (isActive) {
 			dispatch(moveTo(props.position));
 		}
+		dispatch(clearActive());
 	};
 
 	return (
