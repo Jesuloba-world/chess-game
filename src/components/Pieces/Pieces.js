@@ -1,8 +1,10 @@
 import { Fragment } from "react";
-import { pieces } from "../../functions/Cells";
 import Piece from "./Piece/Piece";
+import { useSelector } from "react-redux";
 
 const Pieces = (props) => {
+	const pieces = useSelector((state) => state.pieces);
+
 	return (
 		<Fragment>
 			{pieces.map((piece) => (
