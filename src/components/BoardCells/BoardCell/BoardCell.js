@@ -1,6 +1,6 @@
 import classes from "./BoardCell.module.css";
-import { useDispatch } from "react-redux";
-import { clearActive } from "../../../store/action";
+import { useDispatch, useSelector } from "react-redux";
+import { clearActive, moveTo } from "../../../store/action";
 
 const BoardCell = (props) => {
 	const cellClasses = [
@@ -13,9 +13,19 @@ const BoardCell = (props) => {
 	const Labelhorizontal = [classes.Label, classes.LabelHorizontal];
 
 	const dispatch = useDispatch();
+	const isActive = useSelector((state) => {
+		return state.validCells.includes(props.position);
+	});
+
+	if (isActive) {
+		cellClasses.push(classes.active);
+	}
 
 	const onClickHandler = () => {
 		dispatch(clearActive());
+		if (isActive) {
+			dispatch(moveTo(props.position));
+		}
 	};
 
 	return (

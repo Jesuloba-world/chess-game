@@ -1,1 +1,1 @@
-export { pickPiece, clearActive } from "./chess";
+export { pickPiece, clearActive, setValidMoves, moveTo } from "./chess";

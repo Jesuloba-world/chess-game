@@ -3,6 +3,20 @@
 	z-index: 1;
 }
 
+.active {
+	background: rgb(255, 255, 255);
+	background: radial-gradient(
+		circle,
+		rgba(255, 255, 255, 1) 30%,
+		rgba(0, 212, 255, 0.8) 80%
+	);
+	border: 1px solid #000;
+}
+
+.active:last-child {
+	border-top: 1px solid transparent;
+}
+
 .black {
 	background-color: #70281f;
 }
